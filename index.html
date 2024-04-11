@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio</title>
+    <link
+    rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+  />
+    <link
+    rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css"
+  />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/estilos.css">
+    <link rel="stylesheet" href="./src/css/responsivo.css">
+
+</head>
+<body>
+    <!-- o uso do id é para identificar sertos elementos exclusivamente como no jscript -->
+    <header class="cabecalho">
+        <a href="#">
+            <h1 class="logo">IL</h1>
+        </a>
+        <nav class="menu"><!--a tag nav sinalisa area onde vai ocorrer a navegação da pagina-->
+            <ul>
+                <li><a href="#projetos">Meus Projétos</a></li><!--para vc conseguir que a pagina faça uma rolagem para a sessão correspondente é nescessario o # antes do nome do href e na section indentificar atravez do id o mesmo nome após o # no caso projetos -->
+            </ul>
+        </nav>
+    </header>
+    <!-- essa estrutura e chamada de semantica -->
+    <section class="home">
+        <div class="informacoes">
+            <h1>Olá, Sou Isadora B. Luiz</h1>
+            <p>Uma Arquiteta em formação apaixonado por desenhos e projetos arquitetonicos.</p>
+            <p>Estou sempre me desafiando com novos projetos e buscando feedback na comunidade de arquitetura, alem de compartilhar meus conhecimentos. 😊</p>
+            <p>Ah, tambem sou fã de musicas, filmes, series e animes. 💜</p>
+
+            <ul class="redes-sociais">
+                <li>
+                    <!--a target _blank é para quando a pessoa clicar no link ira abrir uma nova janela, mantendo assim a navegação da sua pagina de portifolio-->
+                    <a href="https://www.linkedin.com/in/isadora-barreto-luiz-78b8a7145/" title="Ir para o linkedin" target="_blank">
+                        <!--Tag para icones, que pegara a referencia do devicons que esta no caminho link no head-->
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </li>
+
+                <li>
+                            <!-- o title serve para quando a pessoa posiciona o mouse em cima do link sem clicar ele descreve a ação que vc indicou nele -->
+                            <a href="https://wa.me/5519993126229" title="Enviar mensagem no WhatsApp" target="_blank">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                </li>
+
+                <li>
+                    <a href="https://github.com/nomedousuario" title="Ir para o GitHub" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://www.instagram.com/isadora_bluiz" title="Ir para o Instagram" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="container-foto">
+            <div class="foto sombra-interna">
+                <img src="./src/imagens/foto-perfil.png" alt="foto do portifolio do jeamcluiz"><!--O alt serve para que se por algum motivo não carregar a foto o texto dira o que deveria estar ali, ou se alguma pessoa com problemas visuais estivar usando leitores de tela ele vai identificar o elemento foto como o que esta no alt-->
+            </div>
+        </div>
+    </section>
+    <section class="projetos" id="projetos">
+        <h2 class="titulo">Meus Projetos</h2>
+        <div class="container-projetos">
+            
+            <!--é possivel vc digitar div.projeto e clicar enter que a IDE ja vai criar a div e a class juntos-->
+            <div class="projeto ativo">
+                <a href="https://projetosenaijcl.000webhostapp.com/MundodeNaruto/index.html" target="_blank">
+                    <img src="./src/imagens/Ninja_Heroes.png" alt="Projeto Landing page GTA">
+                    <h3>Projeto 1</h3>
+                    <div class="informacoes-projeto">
+                        <p>Projeto feito em HTML, CSS e JavaScript</p>
+                        <p><p>🔗 Ver no GitHub Pages</p></p>
+                    </div>
+                </a>
+            </div>
+            <div class="projeto ativo">
+                <a
+                  href="https://github.com/devemdobro/projeto-listagem-pokemon"
+                  target="_blank"
+                >
+                  <img
+                    src="./src/imagens/projeto-listagem-pokemon.png"
+                    alt="Projeto listagem de pokemons"
+                  />
+                  <h3>Projeto 2</h3>
+                  <div class="informacoes-projeto">
+                    <p>Projeto feito usando HTML, CSS e JavaScript</p>
+                    <p>🔗 Ver no GitHub Pages</p>
+                  </div>
+                </a>
+              </div>
+      
+              <div class="projeto ativo">
+                <a
+                  href="https://github.com/devemdobro/projeto-one-piece-final"
+                  target="_blank"
+                >
+                  <img
+                    src="./src/imagens/projeto-one-piece.png"
+                    alt="Projeto landing page One Piece"
+                  />
+                  <h3>Projeto 3</h3>
+                  <div class="informacoes-projeto">
+                    <p>Projeto feito usando HTML, CSS e JavaScript</p>
+                    <p>🔗 Ver no GitHub Pages</p>
+                  </div>
+                </a>
+              </div>
+      
+              <div class="projeto ativo">
+                <a href="https://github.com/devemdobro/x-men-szpc" target="_blank">
+                  <img
+                    src="./src/imagens/projeto-x-men.png"
+                    alt="Projeto seletor de personagens x-men"
+                  />
+                  <h3>Projeto 4</h3>
+                  <div class="informacoes-projeto">
+                    <p>Projeto feito usando HTML, CSS e JavaScript</p>
+                    <p>🔗 Ver no GitHub Pages</p>
+                  </div>
+                </a>
+              </div>
+      
+              <div class="projeto">
+                <a href="#" target="_blank">
+                    <img src="./src/imagens/projeto-gta.png" alt="Projeto Landing page GTA">
+                    <h3>Projeto 5</h3>
+                    <div class="informacoes-projeto">
+                        <p>Projeto feito em HTML, CSS e JavaScript</p>
+                        <p><p>🔗 Ver no GitHub Pages</p></p>
+                    </div>
+                </a>
+            </div>
+      
+              <div class="projeto">
+                <a href="#" target="_blank">
+                  <img
+                    src="https://via.placeholder.com/515X700"
+                    alt="Capa do projeto"
+                  />
+                  <h3>Projeto 6</h3>
+                  <div class="informacoes-projeto">
+                    <p>Projeto feito usando HTML, CSS e JavaScript</p>
+                    <p>🔗 Ver no GitHub Pages</p>
+                  </div>
+                </a>
+              </div>
+      
+              <div class="projeto">
+                <a href="#" target="_blank">
+                  <img
+                    src="https://via.placeholder.com/515X700"
+                    alt="Capa do projeto"
+                  />
+                  <h3>Projeto 7</h3>
+                  <div class="informacoes-projeto">
+                    <p>Projeto feito usando HTML, CSS e JavaScript</p>
+                    <p>🔗 Ver no GitHub Pages</p>
+                  </div>
+                </a>
+              </div>
+      
+              <div class="projeto">
+                <a href="#" target="_blank">
+                  <img
+                    src="https://via.placeholder.com/515X700"
+                    alt="Capa do projeto"
+                  />
+                  <h3>Projeto 8</h3>
+                  <div class="informacoes-projeto">
+                    <p>Projeto feito usando HTML, CSS e JavaScript</p>
+                    <p>🔗 Ver no GitHub Pages</p>
+                  </div>
+                </a>
+              </div>
+            
+        </div>
+
+        <button class="btn-mostrar-projetos">Mostrar mais</button>
+
+    </section>
+
+    <script src="./src/js/index.js"></script>
+</body>
+</html>
